@@ -7,7 +7,7 @@ export default [
         start_date: 'Feb 2021',
         endup_date: 'Present',
         items: [
-            `Gained advanced proficiency in Laravel, API development, raw JavaScript, and PHP through real-life working experiences. Successfully applied these skills across numerous projects, contributing to high client satisfaction rates and earning 5-star ratings for 55 projects out of over 57 completed.
+            `Gained advanced proficiency in Laravel, API development, JavaScript, and PHP through real-life working experiences. Successfully applied these skills across numerous projects, contributing to high client satisfaction rates and earning 5-star ratings for 55 projects out of over 57 completed.
             `,
 
             `Engaged in a diverse range of projects, involving both updates to existing systems and the development of new solutions from scratch. Below, I've highlighted two projects that were built entirely from the ground up`,

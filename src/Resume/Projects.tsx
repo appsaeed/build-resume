@@ -28,7 +28,7 @@ export default function Projects(props: Html) {
                 <span>
                   <span className="px-1">|</span>
                   <a href={project.link} className="link" target="_blank">
-                    Live
+                    Live demo
                   </a>
                 </span>
               )}

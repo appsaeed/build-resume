@@ -1,4 +1,7 @@
+import social_media from "../data/social_media";
+
 export default function Header() {
+  const { linkedin, github, personal } = social_media;
   return (
     <header className="border-b-2 border-gray-800 pb-2 mb-2 flex justify-between items-end">
       <div>
@@ -14,12 +17,8 @@ export default function Header() {
             <tr>
               <td className="text-right font-bold">Github:</td>
               <td className="pl-2 text-right">
-                <a
-                  href="https://github.com/appsaeed"
-                  className="link"
-                  target="_blank"
-                >
-                  https://github.com/appsaeed
+                <a href={github.link} className="link" target="_blank">
+                  {github.link.replace("https://", "")}
                 </a>
               </td>
             </tr>
@@ -27,12 +26,8 @@ export default function Header() {
             <tr>
               <td className="text-right font-bold">Linkedin:</td>
               <td className="pl-2 text-right">
-                <a
-                  href="https://linkedin.com/in/appsaeed"
-                  className="link"
-                  target="_blank"
-                >
-                  linkedin.com/in/appsaeed
+                <a href={linkedin.link} className="link" target="_blank">
+                  {linkedin.link.replace("https://www.", "")}
                 </a>
               </td>
             </tr>
@@ -40,12 +35,8 @@ export default function Header() {
             <tr>
               <td className="text-right font-bold">Website:</td>
               <td className="pl-2 text-right">
-                <a
-                  href="https://appsaeed.github.io"
-                  className="link"
-                  target="_blank"
-                >
-                  https://appsaeed.github.io
+                <a href={personal.link} className="link" target="_blank">
+                  {personal.link}
                 </a>
               </td>
             </tr>
