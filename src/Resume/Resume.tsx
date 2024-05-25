@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { decryptSync, encryptSync } from "utilies";
 import Navbar from "../layout/Navbar";
 import Expreience from "./Expreience";
 import Header from "./Header";
@@ -10,9 +11,11 @@ const Resume = () => {
   const [auth, setAuth] = useState(false);
 
   useEffect(() => {
-    if (!import.meta.env.DEV) {
+    const pwd = import.meta.env.VITE_PASSWORD;
+    if (decryptSync(sessionStorage.getItem("39032kfowej") || "") !== pwd) {
       const password = prompt("Your authentication");
-      if (password === import.meta.env.VITE_PASSWORD) {
+      if (password === pwd) {
+        sessionStorage.setItem("39032kfowej", encryptSync(pwd));
         setAuth(true);
       }
     } else {

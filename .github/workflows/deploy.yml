@@ -45,6 +45,10 @@ jobs:
         run: npm run build
         env: 
           VITE_PASSWORD: "${{ vars.VITE_PASSWORD }}"
+          VITE_NAME: "Saeed Hossen"
+          VITE_BASENAME: "build-resume"
+          VITE_DESCRIPTION: ""
+          VITE_MAIN_DOM: "__APP__"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
