@@ -10,7 +10,7 @@ export default function Expreience(props: Html) {
           <div key={i} className="flex justify-between">
             <div>
               <span className="font-bold uppercase">{expreince.title} | </span>
-              <span>{expreince.company} | </span>
+              <span className=" font-bold">{expreince.company} | </span>
               <span>
                 <a
                   href={expreince.company_your_url}

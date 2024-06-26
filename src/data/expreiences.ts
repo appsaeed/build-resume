@@ -1,7 +1,7 @@
 export default [
     {
         title: 'Full-stack web development',
-        company: 'Fiverr.com',
+        company: 'fiverr.com',
         company_your_brand: 'Appsaeed',
         company_your_url: 'https://www.fiverr.com/appsaeed',
         start_date: 'Feb 2021',

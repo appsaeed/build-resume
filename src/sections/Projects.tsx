@@ -3,10 +3,11 @@ import { Html } from "../types/dom";
 import SectionHeader from "./SectionHeader";
 
 export default function Projects(props: Html) {
+  const resume_projects = projects.filter((item) => item.show_in_resume);
   return (
     <section {...props}>
       <SectionHeader title="projects" />
-      {projects.map((project, i) => (
+      {resume_projects.map((project, i) => (
         <div key={i}>
           <div className="flex justify-between">
             <span>
@@ -28,7 +29,7 @@ export default function Projects(props: Html) {
                 <span>
                   <span className="px-1">|</span>
                   <a href={project.link} className="link" target="_blank">
-                    Live demo
+                    Live
                   </a>
                 </span>
               )}
