@@ -8,11 +8,11 @@ import Skills from "./Skills";
 import Summary from "./Summary";
 
 const Resume = () => {
-  const [auth, setAuth] = useState(false);
+  const [auth, setAuth] = useState(import.meta.env.DEV);
 
   useEffect(() => {
     const pwd = import.meta.env.VITE_PASSWORD;
-    if (decryptSync(sessionStorage.getItem("39032kfowej") || "") !== pwd) {
+    if ((decryptSync(sessionStorage.getItem("39032kfowej") || "") !== pwd) && !(import.meta.env.DEV)) {
       const password = prompt("Your authentication");
       if (password === pwd) {
         sessionStorage.setItem("39032kfowej", encryptSync(pwd));
